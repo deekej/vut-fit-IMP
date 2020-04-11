@@ -1,0 +1,24 @@
+Aplikace: FITkit Voltmeter
+
+Popis: Aplikace umoznuje vyuzit vstupni AD prevodnik FITkitu k mereni napeti v
+       rozsahu 0-5V.
+
+       Pri napeti v rozsahu 0-3V je zapinano nizsi referencni napeti pro presnejsi
+       mereni.
+
+       Aktualne merene napeti je zobrazovano v intervalech 100 ms na displeji
+       FITkitu, historie mereni (forma osciloskopu) je pak zobrazovana na monitoru
+       pripojenem k FITkitu pres VGA rozhrani.
+
+       (Zelena barva znaci mereni s referencnim napetim 1.5V,
+        oranzova barva znaci mereni s referencnim napetim 2.5V,
+        Cervena barva pak znaci napeti 5 a nebo vyse Voltu, ktere
+        uz nejde dale rozlisit.)
+
+       Kazdy cyklus mereni je indikovan take blikajici zelenou diodou D5.
+       Referencni napeti 2.5V je taktez indikovano rozsvicenim cervene diody D6.
+
+       V pripade zaseknuti Voltmetru stisnete tlacitko restart pro jeho opetovnou
+       inicializaci a nove mereni.
+
+Autor: David Kaspar (xkaspa34@stud.fit.vutbr.cz)

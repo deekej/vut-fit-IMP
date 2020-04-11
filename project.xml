@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project fitkitversion="1.0" outputprefix="Voltmetr">
+
+	<!--  Project description -->
+	<name>FITkit Voltmeter (xkaspa34)</name>
+	<author>David Kaspar</author>
+	<authoremail>xkaspa34@stud.fit.vutbr.cz</authoremail>
+  <revision>20131216</revision>
+  <description>FITkit je potreba pripojit pres VGA k monitoru, na kterem se budou zobrazovat namerene hodnoty napeti na pinu: Napeti je mereno v rozsahu 0-5V.</description>
+
+    <!--  MCU part --> 
+	<mcu>
+        <include>mcu/libs/lcd/package.xml</include>
+
+		<file>voltmeter.c</file>
+		<file>vga_block.c</file>
+		<files>main.c</files>
+	</mcu>
+
+	<!-- FPGA part -->
+	<fpga architecture="pc">
+        <include>fpga/ctrls/spi/package.xml</include>
+        <include>fpga/ctrls/vga/package.xml</include>
+        <include>fpga/ctrls/lcd/package.xml</include>
+        <include>fpga/ctrls/keyboard/package.xml</include>
+
+		<file>voltmeter_top.vhd</file>
+	</fpga>
+
+</project>
